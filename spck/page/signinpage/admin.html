@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div> email: <br> <span id="name"></span></div>
+    <div> password: <br> <span id="pass"></span></div>
+
+    <script>
+        const Username = localStorage.getItem('name');
+        const Password = localStorage.getItem('pass');
+
+        document.getElementById('name').textContent = Username;
+        document.getElementById('pass').textContent = Password;
+    </script>
+
+</body>
+</html>
